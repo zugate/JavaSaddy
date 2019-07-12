@@ -1,0 +1,12 @@
+package com.cruds.training;
+
+public class VehicleUtility {
+
+	public static IVehicle getVehicle(String type) {
+		if(type.equals("Luxury"))
+			return new Car();
+		else if(type.equals("Passenger"))
+			return new Bus();
+		return null;
+	}
+}

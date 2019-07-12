@@ -1,0 +1,19 @@
+package com.cruds.thread;
+
+public class Clicker implements Runnable {
+
+	long counter;
+	Thread t;
+	volatile boolean running=true;
+	public Clicker(int priority) {
+		
+		t=new Thread(this);
+		t.setPriority(priority);
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

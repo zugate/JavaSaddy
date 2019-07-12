@@ -1,0 +1,10 @@
+package com.cruds.io;
+
+public class DataStreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

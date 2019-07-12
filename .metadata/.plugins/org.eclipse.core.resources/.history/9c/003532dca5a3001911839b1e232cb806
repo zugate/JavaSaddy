@@ -1,0 +1,26 @@
+package com.cruds.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileOutDemo {
+
+	public static void main(String...asd) {
+		String msg="Hello World";
+		byte[] ab=msg.getBytes();
+		
+		try {
+			FileOutputStream fos=new FileOutputStream("output.txt");
+			fos.write(ab);
+			System.out.println("File written sucessfully!!");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

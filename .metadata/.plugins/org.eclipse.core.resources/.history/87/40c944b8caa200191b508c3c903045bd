@@ -1,0 +1,8 @@
+package com.cruds.training;
+
+public class Animal {
+
+	public void talk() {
+		System.out.println("Animal talking");
+	}
+}

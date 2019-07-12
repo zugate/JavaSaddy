@@ -1,0 +1,21 @@
+package com.cruds.training;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student s1=new Student(20,"Shubham");
+//		s1.setRollNo(20);
+//		s1.setName("Shubham");
+		
+		System.out.println(s1.getRollNo()+" "+s1.getName());
+		
+		Student s2=new Student(30,"Shivam");
+		
+		System.out.println(s1.getRollNo()+" "+s1.getName());
+		
+		System.out.println("Number of objects = "+Student.getCount());
+	}
+
+}

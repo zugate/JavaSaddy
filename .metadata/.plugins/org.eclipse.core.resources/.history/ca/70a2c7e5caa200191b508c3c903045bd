@@ -1,0 +1,13 @@
+package com.cruds.training;
+
+public class Dog extends Animal{
+
+	public void talk() {
+		System.out.println("BOW WOW");
+	}
+	
+	public void wagTail()
+	{
+		System.out.println("Dog wags tail");
+	}
+}

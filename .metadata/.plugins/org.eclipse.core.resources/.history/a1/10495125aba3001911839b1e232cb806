@@ -1,0 +1,8 @@
+package com.cruds.training;
+
+public class ObjectInputStreamDemo {
+
+	public static void main(String...asdf) {
+		
+	}
+}

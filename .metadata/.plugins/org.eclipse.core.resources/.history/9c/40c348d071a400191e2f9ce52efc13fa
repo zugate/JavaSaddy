@@ -1,0 +1,17 @@
+package com.cruds.thread;
+
+public class Printer {
+
+	public void Print(String msg) {
+		System.out.println("["+msg);
+		
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("]");
+	}
+	
+}

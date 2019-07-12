@@ -1,0 +1,5 @@
+package com.cruds.training;
+
+public interface IVehicle2 {
+
+}

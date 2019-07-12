@@ -1,0 +1,19 @@
+package com.cruds.training;
+
+import com.cruds.exception.StudentException;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		Student s1=new Student(20,"","kumar");
+		}
+		catch(StudentException se) {
+			System.out.println(se.getDetails());
+		}
+//		s1.setRollNo(20);
+//		s1.setName("Shubham");
+	}
+
+}

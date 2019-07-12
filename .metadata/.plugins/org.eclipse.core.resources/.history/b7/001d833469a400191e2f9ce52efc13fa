@@ -1,0 +1,11 @@
+package com.cruds.thread;
+
+public class MyThreadR implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

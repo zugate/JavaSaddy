@@ -1,0 +1,9 @@
+package com.cruds.training;
+
+public interface IVehicle {
+	
+	public void start(); // by default its public
+	public void stop();
+	
+	
+}

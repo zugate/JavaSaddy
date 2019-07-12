@@ -1,0 +1,14 @@
+package com.cruds.training;
+
+public class TestAnimal {
+
+	public static void main(String[] args) {
+
+		Animal a =new Animal();
+		a.talk();
+		
+		Dog d=new Dog();
+		d.talk();
+	}
+
+}

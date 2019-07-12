@@ -1,0 +1,17 @@
+package com.cruds.training;
+
+public class ArrayDemo {
+	
+	public static void main(String...asd) {
+		
+		int[] nums=new int[5];
+		
+		nums[0]=99;
+		nums[1]=22;
+		
+		for(int i=0;i<nums.length;i++) {
+			System.out.println(nums[i]);
+		}
+	}
+
+}

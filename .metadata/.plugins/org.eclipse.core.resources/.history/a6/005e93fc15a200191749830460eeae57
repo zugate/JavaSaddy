@@ -1,0 +1,13 @@
+package com.cruds.training;
+
+public class TestAnimal {
+
+	public static void main(String[] args) {
+
+		Animal a =AnimalProvider.getAnimal("Faithfull");
+		a.talk();
+		
+	
+	}
+
+}

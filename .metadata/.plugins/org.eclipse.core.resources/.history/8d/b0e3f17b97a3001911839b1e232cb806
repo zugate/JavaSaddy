@@ -1,0 +1,13 @@
+package com.cruds.assignment;
+
+public class TestCalc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calqculator c=new Calqculator();
+		
+		int result=c.divide(10, 0);
+		System.out.println("Result is "+result);
+	}
+
+}

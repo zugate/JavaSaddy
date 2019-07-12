@@ -1,0 +1,90 @@
+package com.cruds.training;
+
+import java.util.Scanner;
+public class StudentDirectory {
+
+	static int count=0;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		Student[] s=new Student[25];
+		int tempRoll;
+		String tempName;
+		
+		
+		boolean choice2=false;
+		do{
+			System.out.println("Choose the following options\n"
+					+ "1. Add Students ( Max. 25)\n"
+					+ "2. Search Students by roll number\n"
+					+ "3. Search Students by Name\n"
+					+ "4. List all students\n"
+					+ "5. exit");
+			int choice=sc.nextInt();
+			sc.nextLine();
+				switch(choice)
+				{
+					case 1: System.out.println("Enter the Name. of the student");
+							tempName=sc.nextLine();
+							System.out.println("Enter the roll no of the student");
+							tempRoll=sc.nextInt();
+							s[count++]=new Student(tempRoll, tempName);
+							break;
+					case 2: System.out.println("Enter the Roll no. of the Student you want to search");
+							int temp=sc.nextInt();
+							int itr=0;boolean found=false;
+							while(s[itr].getRollNo()!=0||itr!=s.length)
+							{
+								if(s[itr].getRollNo()==temp)
+									{found=true;break;}
+								itr++;
+							}
+							if(found)
+							{
+								System.out.println("Student Found !! with name "+s[itr].getName());
+							}
+							else
+								System.out.println("Not Found!");
+							break;
+					case 3: System.out.println("Enter the name of the Student you want to search");
+							String st=sc.nextLine();
+							int itr2=0;boolean found2=false;
+							while(s[itr2].getName()!=null&&itr2!=s.length)
+							{
+								if(s[itr2].getName().equalsIgnoreCase(st))
+									{found2=true;break;}
+								itr2++;
+							}
+							if(found2)
+							{
+								System.out.println("Student Found !! with Roll no. "+s[itr2].getRollNo());
+							}
+							else
+								System.out.println("Not Found!");
+							break;
+					case 4: System.out.println("Listing all the students");
+							int itr3=0;
+							while(itr3<count) {
+								System.out.println("Student "+itr3+" Roll no. :"+s[itr3].getRollNo());
+								System.out.println("                Name     :"+s[itr3].getName());
+								System.out.println();
+								itr3++;
+							}
+							break;
+					case 5: System.exit(0);
+							break;
+					default: System.out.println("Wrong option");
+				}
+				System.out.println("If you want to Enter the choice again (Press 1) else (Press -1)");
+				if(sc.nextInt()==1)
+					choice2=true;
+				else
+					choice2=false;
+				sc.nextLine();
+		}while(choice2==true);
+		
+		
+		sc.close();
+	}
+
+}

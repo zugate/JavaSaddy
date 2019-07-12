@@ -1,0 +1,12 @@
+package com.cruds.assignment;
+
+public class TestFly {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		System.out.println(x);
+		IFly fly=FlyProvider.getFly(IFly.FEATHER);
+	}
+
+}

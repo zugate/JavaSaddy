@@ -1,0 +1,17 @@
+package com.cruds.training;
+
+public class VehicleUtility {
+
+	public static final String LUXURY_TYPE="LUXURY";
+	public static final String PASS_TYPE="PASSENGER";
+	public static final String PET_TYPE="PET";
+	public static IVehicle getVehicle(String type) {
+		if(type.equals(IVehicle.))
+			return new Car();
+		else if(type.equals("Passenger"))
+			return new Bus();
+		else if(type.equals("Pet"))
+			return new Dog();
+		return null;
+	}
+}

@@ -1,0 +1,49 @@
+package com.cruds.training;
+
+public class Student {
+
+	private int rollNo;
+	private String name;
+	
+	private String lastName;
+	
+	private static int count;
+	public Student(int rollNo, String name) {
+		this.rollNo = rollNo;
+		this.name = name;
+		count++;
+		System.out.println("2 ARG constructor");
+	}
+	
+	public Student(int rollNo,String name,String lastName)
+	{
+		this(rollNo,name);
+		this.lastName=lastName;
+		System.out.println("3 ARG constructor");
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public static int getCount() {
+		return count;
+	}
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
